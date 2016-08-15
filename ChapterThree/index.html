@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Directives Exercise 1</title>
+
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="bower_components/bootstrap/dist/css/bootstrap.min.css" charset="utf-8"></script>
+
+  </head>
+  <body ng-controller='HomeController as controller'>
+
+    <h1>See how directives work</h1>
+    <h2>A conversation about {{controller.title}}</h2>
+
+    <p>
+      What do you want to have for {{controller.title}}
+      <input type="text" ng-model='foodName' placeholder="Enter a food">
+    </p>
+    <p>
+      Ok, let's go out and eat <span ng-bind='foodName'></span>!
+    </p>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
