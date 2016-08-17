@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app='PetShopApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Pet Shop App</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+
+  </head>
+  <body ng-controller='PetShopController as controller' ng-cloak>
+
+    <h1>Available Dogs</h1>
+    <table border="1">
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Image
+        </th>
+      </tr>
+      <tr ng-repeat='pet in controller.dogs'>
+        <td>
+          {{pet.name}}
+        </td>
+        <td>
+          <img ng-src='{{pet.image}}' height='100' width='100'/>
+        </td>
+      </tr>
+    </table>
+
+    <h1>Available Bunnies</h1>
+    <table border='1'>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Image
+        </th>
+      </tr>
+      <tr ng-repeat='pet in controller.bunnies'>
+        <td>
+          {{pet.name}}
+        </td>
+        <td>
+           <img ng-src='{{pet.image}}' height='100' width='100'/>
+        </td>
+      </tr>
+
+    </table>
+
+    <!-- <ul>
+
+    </ul>
+
+    <ul>
+
+    </ul> -->
+
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

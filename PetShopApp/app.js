@@ -1,0 +1,19 @@
+var PetShopApp;
+(function (PetShopApp) {
+    angular.module('PetShopApp', []);
+    var PetShopController = (function () {
+        function PetShopController() {
+            this.dogs = [
+                { id: 1, name: 'Rover the dog', image: 'collie5.jpg' },
+                { id: 2, name: 'Ben the dog', image: 'Beagle_portrait_Camry.jpg' }
+            ];
+            this.bunnies = [
+                { id: 1, name: 'Bugs Bunny', image: 'bunny.jpg' },
+                { id: 2, name: 'Clover the Piggy', image: 'guinea-pig-tan.jpg' }
+            ];
+        }
+        return PetShopController;
+    }());
+    angular.module('PetShopApp').controller('PetShopController', PetShopController);
+})(PetShopApp || (PetShopApp = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXBwLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLElBQVUsVUFBVSxDQW1CbkI7QUFuQkQsV0FBVSxVQUFVLEVBQUMsQ0FBQztJQUNwQixPQUFPLENBQUMsTUFBTSxDQUFDLFlBQVksRUFBRSxFQUFFLENBQUMsQ0FBQztJQUVqQztRQUlFO1lBQ0UsSUFBSSxDQUFDLElBQUksR0FBRztnQkFDVixFQUFDLEVBQUUsRUFBRSxDQUFDLEVBQUUsSUFBSSxFQUFFLGVBQWUsRUFBRSxLQUFLLEVBQUUsYUFBYSxFQUFDO2dCQUNwRCxFQUFDLEVBQUUsRUFBRSxDQUFDLEVBQUUsSUFBSSxFQUFFLGFBQWEsRUFBRSxLQUFLLEVBQUUsMkJBQTJCLEVBQUM7YUFDakUsQ0FBQztZQUNGLElBQUksQ0FBQyxPQUFPLEdBQUc7Z0JBQ2IsRUFBQyxFQUFFLEVBQUUsQ0FBQyxFQUFFLElBQUksRUFBRSxZQUFZLEVBQUUsS0FBSyxFQUFFLFdBQVcsRUFBQztnQkFDL0MsRUFBQyxFQUFFLEVBQUUsQ0FBQyxFQUFFLElBQUksRUFBRSxrQkFBa0IsRUFBRSxLQUFLLEVBQUUsb0JBQW9CLEVBQUM7YUFDL0QsQ0FBQztRQUNKLENBQUM7UUFDSCx3QkFBQztJQUFELENBQUMsQUFkRCxJQWNDO0lBQ0QsT0FBTyxDQUFDLE1BQU0sQ0FBQyxZQUFZLENBQUMsQ0FBQyxVQUFVLENBQUMsbUJBQW1CLEVBQUUsaUJBQWlCLENBQUMsQ0FBQztBQUNsRixDQUFDLEVBbkJTLFVBQVUsS0FBVixVQUFVLFFBbUJuQiIsInNvdXJjZXNDb250ZW50IjpbIm5hbWVzcGFjZSBQZXRTaG9wQXBwIHtcbiAgYW5ndWxhci5tb2R1bGUoJ1BldFNob3BBcHAnLCBbXSk7XG5cbiAgY2xhc3MgUGV0U2hvcENvbnRyb2xsZXIge1xuICAgIHB1YmxpYyBkb2dzO1xuICAgIHB1YmxpYyBidW5uaWVzO1xuXG4gICAgY29uc3RydWN0b3IoKSB7XG4gICAgICB0aGlzLmRvZ3MgPSBbXG4gICAgICAgIHtpZDogMSwgbmFtZTogJ1JvdmVyIHRoZSBkb2cnLCBpbWFnZTogJ2NvbGxpZTUuanBnJ30sXG4gICAgICAgIHtpZDogMiwgbmFtZTogJ0JlbiB0aGUgZG9nJywgaW1hZ2U6ICdCZWFnbGVfcG9ydHJhaXRfQ2FtcnkuanBnJ31cbiAgICAgIF07XG4gICAgICB0aGlzLmJ1bm5pZXMgPSBbXG4gICAgICAgIHtpZDogMSwgbmFtZTogJ0J1Z3MgQnVubnknLCBpbWFnZTogJ2J1bm55LmpwZyd9LFxuICAgICAgICB7aWQ6IDIsIG5hbWU6ICdDbG92ZXIgdGhlIFBpZ2d5JywgaW1hZ2U6ICdndWluZWEtcGlnLXRhbi5qcGcnfVxuICAgICAgXTtcbiAgICB9XG4gIH1cbiAgYW5ndWxhci5tb2R1bGUoJ1BldFNob3BBcHAnKS5jb250cm9sbGVyKCdQZXRTaG9wQ29udHJvbGxlcicsIFBldFNob3BDb250cm9sbGVyKTtcbn1cbiJdfQ==
