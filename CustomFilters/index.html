@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Creating Custom Filters</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+
+  </head>
+  <body ng-controller='FoodController as controller' ng-cloak>
+    <h1>Filters</h1>
+    <p ng-repeat="food in controller.food|filter:'m'">
+      {{food}}
+    </p>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

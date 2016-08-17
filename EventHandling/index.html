@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Event Handling</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+
+  </head>
+  <body ng-controller='FavoriteController as favorite'>
+
+    <h2>What is your favorite color?</h2>
+
+    <button type="text" ng-click='favorite.pickColor("red")'>Red</button>
+    <button type="text" ng-click='favorite.pickColor("green")'>Green</button>
+    <button type="text" ng-click='favorite.pickColor("blue")'>Blue</button>
+
+    <h2>Your favorite color is : </h2>
+    <output>{{favorite.color}}</output>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>

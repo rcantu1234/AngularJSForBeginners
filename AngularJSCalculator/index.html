@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS Calculator</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+
+  </head>
+  <body ng-controller='CalculatorController as calculator' ng-cloak>
+
+    <input type="number" ng-model='num1'>
+    <input type="number" ng-model='num2'>
+    <button ng-click='calculator.addNumbers(num1, num2)'>Sum</button>
+
+    <h1>{{calculator.result}}</h1>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>

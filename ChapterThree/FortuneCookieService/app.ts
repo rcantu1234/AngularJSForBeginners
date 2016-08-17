@@ -12,8 +12,7 @@ namespace MyApp.Services {
   }
   angular.module('FortuneModule', []).service('FortuneService', FortuneService);
 
-
-angular.module('MyApp', ['FortuneModule']);
+  angular.module('MyApp', ['FortuneModule']);
 
   class FortuneController {
     public fortune;

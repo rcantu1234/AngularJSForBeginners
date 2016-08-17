@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple AngularJS App</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body ng-controller='MovieListController as controller'>
+    <h2>Movies</h2>
+    <ul>
+      <li ng-repeat='movie in controller.movies'>{{movie.id}} {{movie.title}} {{movie.director}}</li>
+    </ul>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
