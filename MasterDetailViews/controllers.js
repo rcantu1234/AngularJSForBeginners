@@ -10,6 +10,7 @@ var MyApp;
         var ProductListController = (function () {
             function ProductListController() {
                 this.products = products;
+                this.message = 'Hello Roel Cantu';
             }
             return ProductListController;
         }());
@@ -21,6 +22,5 @@ var MyApp;
             return ProductDetailsController;
         }());
         Controllers.ProductDetailsController = ProductDetailsController;
-        angular.module('MyApp').controller('ProductListController', ProductListController);
     })(Controllers = MyApp.Controllers || (MyApp.Controllers = {}));
 })(MyApp || (MyApp = {}));

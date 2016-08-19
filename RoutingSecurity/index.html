@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Routing Security</title>
+
+    <base href="/" />
+
+  </head>
+  <body>
+
+    <h2>Hello World</h2>
+
+    <input type="text" ng-model='message'>
+    {{message}}
+
+    <ui-view></ui-view>
+
+
+    <script src="/bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+    <script src="/app.js" charset="utf-8"></script>
+    <script src="/controllers.js"></script>
+  </body>
+</html>

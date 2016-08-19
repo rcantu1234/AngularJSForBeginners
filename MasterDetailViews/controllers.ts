@@ -8,6 +8,11 @@ namespace MyApp.Controllers {
 
     export class ProductListController {
         public products = products;
+        public message;
+
+        constructor() {
+          this.message = 'Hello Roel Cantu';
+        }
     }
 
     export class ProductDetailsController {
@@ -18,6 +23,4 @@ namespace MyApp.Controllers {
         }
     }
 
-
-    angular.module('MyApp').controller('ProductListController', ProductListController); 
 }

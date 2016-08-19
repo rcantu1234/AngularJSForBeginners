@@ -1,0 +1,16 @@
+<h1>Guitar Shop</h1>
+
+<ul>
+  <li ng-repeat='guitar in controller.guitars'>
+  <a ui-sref='Details({id: guitar.id})'>{{guitar.make}}</a>
+  </li>
+</ul>
+
+
+<!-- <h2>Product List</h2>
+
+<ul>
+  <li ng-repeat="product in controller.products">
+    <a ui-sref="Details({id: product.id})">{{product.name}}</a>
+  </li>
+</ul> -->

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Event</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body ng-controller='DirectoryController as controller'>
+
+    <h1>Search Filter</h1>
+    <input type="text" ng-model='search'>
+
+    <ul>
+      <li ng-repeat="person in controller.persons|filter:{name:search}">
+        {{person.name}} - {{person.age}}
+      </li>
+    </ul>
+
+    <form class="" action="index.html" method="post">
+
+    </form>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
