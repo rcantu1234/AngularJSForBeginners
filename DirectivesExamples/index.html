@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Directives Examples</title>
+  </head>
+  <body ng-controller='BookController as controller'>
+
+    <p>
+      What's your name? <input type="text" ng-model='yourname'>
+    </p>
+    <p>
+      Hello <span ng-bind='yourname'></span>!
+    </p>
+    <p>
+      Here are your books :
+    </p>
+    <ol>
+      <li ng-repeat='book in controller.books'>{{'Title: ' + book.title + ', Author: ' + book.author + ', Genre: ' + book.genre}}</li>
+    </ol>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
