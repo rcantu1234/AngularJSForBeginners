@@ -1,0 +1,22 @@
+{
+  "name": "googlemaps",
+  "homepage": "https://github.com/rcantu1234/AngularJSForBeginners",
+  "authors": [
+    "roelcantu <roelhcantu@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-google-maps": "^2.3.4",
+    "angular-simple-logger": "^0.1.7"
+  }
+}

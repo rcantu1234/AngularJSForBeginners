@@ -1,0 +1,13 @@
+<h1>ADD NEW MOVIE</h1>
+
+<form ng-submit="controller.addMovie()">
+    <div>
+        <label for="title">title:</label>
+        <input id="title" ng-model="controller.movieToCreate.title" />
+    </div>
+    <div>
+        <label for="director">director:</label>
+        <input id="director" ng-model="controller.movieToCreate.director" />
+    </div>
+    <input type="submit" value="Save" />
+</form>

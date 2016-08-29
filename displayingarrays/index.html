@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Displaying Arrays</title>
+
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+
+    <base href='/' />
+  </head>
+  <body ng-controller='HomeController as controller'>
+
+    <a ui-sref='Home'>Home</a>
+    <a ui-sref='About'>About</a>
+
+    <ui-view></ui-view>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="controllers.js" charset="utf-8"></script>
+
+  </body>
+</html>
+
+<!-- STEPS FOR ANGULAR MATERIALS -->
+<!--
+mkdir angularmaterialtest && cd angularmaterialtest
+
+[2:22]
+touch index.html app.ts controllers.ts styles.css
+
+[2:22]
+bower init
+
+[2:23]
+(hit return until done)
+
+[2:23]
+npm init
+
+[2:23]
+(hit return until done)
+
+bower install angular angular-animate angular-aria angular-material angular-messages angular-resource angular-ui-router --save
+
+npm install typings --save
+
+typings install dt~angular dt~angular-animate dt~angular-material --global --save
+
+touch animalDialog.html dialog.html -->
+
+<!-- namespace DemoMaterial {
+
+  angular.module('DemoMaterial', ['ngMaterial', 'ngMessages']);
+
+} -->

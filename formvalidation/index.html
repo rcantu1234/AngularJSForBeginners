@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Notes App</title>
+
+  </head>
+  <body ng-controller='MainController as controller'>
+
+    <h1>FORM INFORMATION</h1>
+
+    <form ng-submit='controller.submit()' name='myForm'>
+      <input type="text" ng-model='controller.user.userName' name='uName' required ng-minlength='4'>
+      <span ng-show='myForm.uName.$error.required'>This is a required field.</span>
+      <span ng-show='myForm.uName.$error.minlength'>Minimum length required is 4</span>
+      <span ng-show='myForm.uName.$invalid'>This field is invalid</span>
+
+      <input type="password" ng-model='controller.user.password' name='pwd' required>
+      <span ng-show='myForm.pwd.$error.required'>This is a required field.</span>
+
+      <input type="submit" value='Submit' ng-disabled='myForm.$invalid'>
+
+    </form>
+
+    <h1>CREDENTIALS</h1>
+    <span ng-bind='controller.user.userName'></span>
+    <span ng-bind='controller.user.password'></span>
+
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="controllers.js" charset="utf-8"></script>
+
+
+  </body>
+</html>

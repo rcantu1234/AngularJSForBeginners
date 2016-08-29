@@ -1,0 +1,11 @@
+/* Animate before */
+.task.ng-enter {
+    transition:0.5s linear all;
+    opacity:0;
+}
+
+
+/* Animate after */
+.task.ng-enter-active {
+    opacity:1;
+}

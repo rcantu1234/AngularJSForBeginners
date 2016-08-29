@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <title>angularuiboostrap</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/site.css"/>
+</head>
+
+<body ng-controller="HomeController as controller">
+    <div class="container">
+        <h1>Pick your favorite animal:</h1>
+        <button class="btn" ng-click="controller.showModal('Bears')">Bears</button>
+        <button class="btn" ng-click="controller.showModal('Chickens')">Chickens</button>
+        <button class="btn" ng-click="controller.showModal('Fish')">Fish</button>
+    </div>
+  <!-- <div>
+    <a ui-sref="Home">Home</a>
+  </div>
+
+  <div class="container">
+    <h1>Here is a tooltip : </h1>
+    <input type="text" uib-tooltip='Hello World!' tooltip-placement='bottom'>
+  </div>
+
+  <div class="container">
+    Your <span uib-tooltip='smelly' >fetid</span> proposal is <span uib-tooltip='offensive' >abhorrent</span>
+    to my <span uib-tooltip='morality' >probity</span>.
+  </div> -->
+
+
+
+  <ui-view></ui-view>
+
+  <script src="/scripts/angular/angular.min.js"></script>
+  <script src="/scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/scripts/angular-resource/angular-resource.min.js"></script>
+  <script src="/scripts/angular-animate/angular-animate.min.js"></script>
+  <script src="/scripts/angular-touch/angular-touch.min.js"></script>
+  <script src="/scripts/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/services.js"></script>
+  <script src="/js/controllers.js"></script>
+</body>
+
+</html>

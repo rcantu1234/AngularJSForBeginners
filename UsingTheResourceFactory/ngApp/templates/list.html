@@ -1,0 +1,10 @@
+<h1>LIST VIEW</h1>
+<ul>
+    <li ng-repeat="movie in controller.movies">
+        {{movie.title}}
+        <a ui-sref="Edit({id: movie.id})">edit</a>
+        <a ui-sref="Delete({id: movie.id})">delete</a>
+    </li>
+</ul>
+
+<a ui-sref="Add">Add Movie</a>

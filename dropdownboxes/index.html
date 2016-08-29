@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Dropdown Boxes</title>
+  </head>
+  <body ng-controller='HomeController as controller'>
+
+    <div>
+      <h1>Dropdown Boxes</h1>
+      <select ng-model='controller.selectedCountryId' ng-options='c.id as c.label for c in controller.countries'>
+
+      </select>
+      Selected Country ID : {{controller.selectedCountryId}}
+    </div>
+
+    <div>
+      <select ng-model='controller.selectedCountry' ng-options='c.label for c in controller.countries'>
+
+      </select>
+      Selected Country : {{controller.selectedCountry}}
+    </div>
+
+    <h1>INPUT</h1>
+    <input type="text" ng-model='message'>
+    <span ng-bind='message'></span>
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="controllers.js" charset="utf-8"></script>
+  </body>
+</html>
