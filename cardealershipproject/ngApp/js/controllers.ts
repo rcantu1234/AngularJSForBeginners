@@ -23,30 +23,17 @@ namespace MyApp.Controllers {
        public carString;
        public cars;
 
-       public showModal(animalName: string) {
+       public showModal(carName: string) {
               this.$uibModal.open({
               templateUrl: '/templates/dialog.html',
               controller: 'DialogController',
               controllerAs: 'modal',
               resolve: {
-                  animalName: () => animalName,
-                  this.cars[0]['ShortDescription']
+                  carName: () => carName
               },
               size: 'sm',
           });
        }
-
-      //  this.getMakes = function(make) {
-      //    if(this.makes[0]['id'] === this.selectedMakeId) {
-      //      this.makeString = 'No car to display!!!'
-      //    } else if (this.makes[2]['id'] === this.selectedMakeId) {
-      //      this.makeString = this.cars[0]['ShortDescription'] + " | " + this.cars[1]['ShortDescription'] + " | " + this.cars[2]['ShortDescription'];
-      //    } else if (this.makes[1]['id'] === this.selectedMakeId) {
-      //      this.makeString = this.cars[3]['ShortDescription'] + " | " + this.cars[4]['ShortDescription'];
-      //    }
-      //    return this.makeString;
-      //  }
-
        constructor(private $uibModal: angular.ui.bootstrap.IModalService) {
        }
       }
@@ -58,7 +45,7 @@ namespace MyApp.Controllers {
          this.$uibModalInstance.close();
       }
 
-      constructor(public animalName: string, private $uibModalInstance: angular.ui.bootstrap.IModalServiceInstance) { }
+      constructor(public carName: string, private $uibModalInstance: angular.ui.bootstrap.IModalServiceInstance) { }
   }
   angular.module('MyApp').controller('DialogController', DialogController);
 

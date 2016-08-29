@@ -1,4 +1,4 @@
-<h1>Home Page</h1>
+<h1>Search Cars</h1>
 
 <input ng-model="controller.search"
        ng-model-options="{debounce:1000}"
@@ -6,6 +6,6 @@
 
 <ul>
     <li ng-repeat="car in controller.cars">
-        {{car.ShortDescription}}
+        <h4>{{car.ShortDescription}}</h4>
     </li>
 </ul>

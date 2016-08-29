@@ -1,29 +1,20 @@
-<h1>ABOUT PAGE</h1>
+<h1>Car Models</h1>
 
 <select ng-model='controller.selectedCarId' ng-options='c.id as c.ShortDescription for c in controller.cars'>
 </select>
 
 <br><br>
-Car Id : {{controller.selectedCarId}} <br>
-{{controller.getCars(controller.selectedCarId)}}
-
+<h4>Car Id : {{controller.selectedCarId}}</h4>
+<h4>{{controller.getCars(controller.selectedCarId)}}</h4>
 
   <br>
 
-
-<h1>Dropdown Boxes</h1>
+<h1>Car Make</h1>
 <select ng-model='controller.selectedMakeId' ng-options='c.id as c.name for c in controller.makes'>
 
 </select>
 
 <br><br>
 
-Car Id : {{controller.selectedMakeId}} <br>
-Car Models : {{controller.getMakes(selectedMakeId)}}
-<!-- {{controller.getCars(3)}} -->
-<!-- <span ng-bind='controller.getCars(selectedMakeId)'></span> -->
-<!--
-<select ng-model='controller.selectedMake' ng-options='c.name for c in controller.makes'>
-</select>
-
-Car Select : {{controller.selectedMake}} <br> <br> -->
+<h4>Car Id : {{controller.selectedMakeId}}</h4>
+<h4>Car Models : {{controller.getMakes(selectedMakeId)}}</h4>
