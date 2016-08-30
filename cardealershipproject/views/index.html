@@ -12,12 +12,20 @@
 </head>
 
 <body>
-  <div>
-    <a ui-sref="Home">Home</a>
-    <a ui-sref="About">About</a>
-    <a ui-sref="Details">Details</a>
 
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Car Dealership</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a ui-sref="About">Car Models</a></li>
+      <li><a ui-sref="Details">Details</a></li>
+    </ul>
   </div>
+</nav>
 
   <ui-view></ui-view>
 

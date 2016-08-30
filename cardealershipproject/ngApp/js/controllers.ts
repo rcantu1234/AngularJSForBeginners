@@ -89,11 +89,15 @@ namespace MyApp.Controllers {
 
                 this.getCars = function(car) {
                   if (this.cars[0]['id'] === this.selectedCarId) {
-                    this.carString = this.cars[0]['id'] + " " + this.cars[0]['Price'] + " " + this.cars[0]['FullDescription'];
+                    this.carString = this.cars[0]['FullDescription'] + " " + this.cars[0]['Price'];
                   } else if (this.cars[1]['id'] === this.selectedCarId) {
-                    this.carString = this.cars[1]['id'] + " " + this.cars[1]['Price'] + " " + this.cars[1]['FullDescription'];
+                    this.carString = this.cars[1]['FullDescription'] + " " + this.cars[1]['Price'];
                   } else if (this.cars[2]['id'] === this.selectedCarId) {
-                    this.carString  = this.cars[2]['id'] + " " + this.cars[2]['Price'] + " " + this.cars[2]['FullDescription'];;
+                    this.carString  = this.cars[2]['FullDescription'] + " " + this.cars[2]['Price'];
+                  } else if (this.cars[3]['id'] === this.selectedCarId) {
+                    this.carString  = this.cars[3]['FullDescription'] + " " + this.cars[3]['Price'];
+                  } else if (this.cars[4]['id'] === this.selectedCarId) {
+                    this.carString  = this.cars[4]['FullDescription'] + " " + this.cars[4]['Price'];
                   }
                   return this.carString;
                 }
