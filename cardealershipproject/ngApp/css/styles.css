@@ -1,6 +1,28 @@
 body {
   background-color: beige;
-  margin: 20px;
+  margin:20px;
   background-image: url('summer_savings.jpg');
   font-family: 'Times New Roman', Times, serif;
+  display: block;
+}
+
+input {
+  margin-top: 10px;
+  padding-top: 5px;
+  margin-left: 50px;
+  position: relative;
+  float: right;
+
+}
+
+.searchStyle {
+  color: white;
+  padding-top: 5px;
+  margin-left: 420px;
+  float: right;
+}
+
+nav {
+  min-width: 100%;
+  max-width: 100%;
 }
