@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+p<!DOCTYPE html>
 <html ng-app="MyApp">
 
 <head>
@@ -26,6 +26,21 @@
         <input ng-model="controller.search" size='50'
                ng-model-options="{debounce:1000}"
                ng-change="controller.fetch()" />
+
+               <!-- Single button -->
+           <div ng-controller='MakesController as controller' class="btn-group dropdown" uib-dropdown is-open="status.isopen">
+             <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+               Select Car <span class="caret"></span>
+             </button>
+             <ul class="dropdown-menu"  uib-dropdown-menu role="menu" aria-labelledby="single-button">
+               <li ng-repeat="make for make in controller.makes" role="menuitem"></li>
+                <h3>{{make.id}}</h3>
+               <!-- <li role="menuitem"><a href="#">Tesla</a></li>
+               <li role="menuitem"><a href="#">Mini-Cooper</a></li> -->
+               <li class="divider"></li>
+               <li role="menuitem"><a href="#">Separated link</a></li>
+             </ul>
+           </div>
       </ul>
     </div>
   </nav>
@@ -35,6 +50,7 @@
         <h3>{{car.ShortDescription}}</h3>
     </li>
   </ul>
+
 
 <!-- <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -50,8 +66,6 @@
 </nav> -->
 
   <ui-view></ui-view>
-
-
 
 
 
