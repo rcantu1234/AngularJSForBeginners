@@ -13,14 +13,7 @@
 
 <body ng-controller='SearchController as cont' id='background'>
 
-  <div class="container">
-    <div class="row">
-
-
-    </div>
-
-  </div>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navStyle">
     <div class="container-fluid" ng-controller='MakesController as controller'>
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Car Dealership</a>
@@ -28,6 +21,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a ui-sref="About">About</a></li>
+        <li><a ui-sref="#">Contact</a></li>
         <a ui-sref="Search({id: '{{cont.ShortDescription}}'})"><input ng-model="cont.search" size='50' placeholder="search"
                ng-model-options="{debounce:1000}"
                ng-change="cont.fetch()" /></a>

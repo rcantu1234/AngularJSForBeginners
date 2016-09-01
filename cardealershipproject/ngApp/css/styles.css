@@ -1,23 +1,19 @@
 body {
   /*background-color: beige;*/
   /*background-image: url('/img/gradientImage.jpg');*/
-  /*background-color: beige;*/
+  background-color: white;
+  color: #449D44;
   margin:20px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 18.5px;
-
+  background-image: url(/img/mountains.jpg)
 }
 
-nav {
-  height: 56px;
-  min-width: 400px;
-  max-width: 500%;
-}
 
 .center {
   margin: auto;
-  width: 60%;
-  border: 3px solid black;
+  width:70%;
+  /*border: 3px solid black;*/
   padding: 10px;
   display: block;
 }
@@ -25,7 +21,7 @@ nav {
 input {
   margin-top: 10px;
   padding-top: 5px;
-  margin-left: 400px;
+  margin-left: 300px;
 }
 
 .searchStyle {
@@ -39,10 +35,10 @@ input {
   padding-bottom: 6px;
 }
 
-#background {
+/*#background {
   /*background: linear-gradient(to right, #c3cad1 , #0095da);*/
   background: linear-gradient(to right, #a6872b , #a6a62b);
-}
+}*/
 
 .carList {
   background-color: beige;
