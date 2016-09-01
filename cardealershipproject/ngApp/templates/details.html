@@ -1,6 +1,19 @@
-<div class="container">
-    <h2>Pick your favorite car :</h2>
-    <button class="btn btn-primary" ng-click="controller.showModal('BMW')">BMW</button>
-    <button class="btn btn-primary" ng-click="controller.showModal('Tesla')">Tesla</button>
-    <button class="btn btn-primary" ng-click="controller.showModal('Mini-Cooper')">Mini-Cooper</button>
+<div class="detailsModal">
+  <div class="modal-header">
+      <h2 class="modal-title">{{modal.car.ShortDescription}}</h3>
+  </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-xs-6">
+          <img width="400px" ng-src="{{modal.car.ImageUrl}}" alt="{{modal.car.ShortDescription}}" />
+        </div>
+        <div class="col-xs-6">
+          <h4>{{modal.car.FullDescription}}</h4>
+          <h4>{{modal.car.Price|currency}}</h4>
+        </div>
+      </div>
+    </div>
+  <div class="modal-footer">
+      <button class="btn btn-primary" ng-click="modal.ok()">OK</button>
+  </div>
 </div>

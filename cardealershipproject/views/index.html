@@ -1,4 +1,4 @@
-p<!DOCTYPE html>
+<!DOCTYPE html>
 <html ng-app="MyApp">
 
 <head>
@@ -11,59 +11,37 @@ p<!DOCTYPE html>
 
 </head>
 
-<body ng-controller='HomeController as controller'>
+<body ng-controller='SearchController as cont' id='background'>
 
+  <div class="container">
+    <div class="row">
+
+
+    </div>
+
+  </div>
   <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
+    <div class="container-fluid" ng-controller='MakesController as controller'>
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Car Dealership</a>
       </div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a ui-sref="About">Car Models</a></li>
-        <li><a ui-sref="Details">Details</a></li>
-        <li><h4 class='searchStyle'>Search Cars</h4></li>
-        <input ng-model="controller.search" size='50'
+        <li><a ui-sref="About">About</a></li>
+        <a ui-sref="Search({id: '{{cont.ShortDescription}}'})"><input ng-model="cont.search" size='50' placeholder="search"
                ng-model-options="{debounce:1000}"
-               ng-change="controller.fetch()" />
-
-               <!-- Single button -->
-           <div ng-controller='MakesController as controller' class="btn-group dropdown" uib-dropdown is-open="status.isopen">
-             <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
-               Select Car <span class="caret"></span>
-             </button>
-             <ul class="dropdown-menu"  uib-dropdown-menu role="menu" aria-labelledby="single-button">
-               <li ng-repeat="make for make in controller.makes" role="menuitem"></li>
-                <h3>{{make.id}}</h3>
-               <!-- <li role="menuitem"><a href="#">Tesla</a></li>
-               <li role="menuitem"><a href="#">Mini-Cooper</a></li> -->
-               <li class="divider"></li>
-               <li role="menuitem"><a href="#">Separated link</a></li>
-             </ul>
-           </div>
+               ng-change="cont.fetch()" /></a>
+        <li uib-dropdown>
+        <a href="#" uib-dropdown-toggle class='makeStyle'> Make <span class="caret"></span></a>
+        <ul uib-dropdown-menu role="menu" >
+          <li role="menuitem" ng-repeat="make in controller.makes"><a ui-sref="Show({id: '{{make.id}}'})">{{make.name}}</a></li>
+        </ul>
+       </li>
       </ul>
     </div>
   </nav>
 
-  <ul>
-    <li ng-repeat="car in controller.cars">
-        <h3>{{car.ShortDescription}}</h3>
-    </li>
-  </ul>
-
-
-<!-- <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Car Dealership</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a ui-sref="About">Car Models</a></li>
-      <li><a ui-sref="Details">Details</a></li>
-    </ul>
-  </div>
-</nav> -->
+  <br><br>
 
   <ui-view></ui-view>
 

@@ -1,16 +1,31 @@
-
 body {
-  background-color: beige;
+  /*background-color: beige;*/
+  /*background-image: url('/img/gradientImage.jpg');*/
+  /*background-color: beige;*/
   margin:20px;
   font-family: 'Times New Roman', Times, serif;
-  min-width: 360px;
-  max-width: 100%;
+  font-size: 18.5px;
+
+}
+
+nav {
+  height: 56px;
+  min-width: 400px;
+  max-width: 500%;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid black;
+  padding: 10px;
+  display: block;
 }
 
 input {
   margin-top: 10px;
   padding-top: 5px;
-  margin-left: 50px;
+  margin-left: 400px;
 }
 
 .searchStyle {
@@ -23,8 +38,23 @@ input {
   margin-left: 90px;
   padding-bottom: 6px;
 }
-/*
-.navStyle {
-  min-width: 360px;
-  max-width: 100%;
-}*/
+
+#background {
+  /*background: linear-gradient(to right, #c3cad1 , #0095da);*/
+  background: linear-gradient(to right, #a6872b , #a6a62b);
+}
+
+.carList {
+  background-color: beige;
+  border: 1px solid black;
+}
+
+.showList {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.detailsModal {
+  background-color: black;
+  color: white;
+}

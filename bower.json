@@ -1,0 +1,17 @@
+{
+  "name": "AngularJSForBeginners",
+  "homepage": "https://github.com/rcantu1234/AngularJSForBeginners",
+  "authors": [
+    "roelcantu <roelhcantu@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

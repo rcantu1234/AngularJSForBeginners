@@ -17,16 +17,6 @@ router.get('/makes/:id', function (req, res, next) {
     }
 });
 
-var getCars = function(id) {
-  if (makes[0]['id'] === id) {
-    console.log('BMW');
-  } else if (makes[1]['id'] === id) {
-    console.log('Tesla');
-  } else if (makes[2]['id'] === id) {
-    console.log('Mini Cooper : ' + cars[0]['id'] + " " + cars[0]['ShortDescription'] + " " + cars[0]['FullDescription'] + " " + cars[0]['CarMakeId'] + " " + cars[0]['Price']);
-  }
-}
-
 function findMake(id:number) {
   let matches = makes.filter((make) => {
     return make.id == id;

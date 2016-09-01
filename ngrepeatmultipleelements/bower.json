@@ -1,0 +1,21 @@
+{
+  "name": "ngrepeatmultipleelements",
+  "homepage": "https://github.com/rcantu1234/AngularJSForBeginners",
+  "authors": [
+    "roelcantu <roelhcantu@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8"
+  }
+}

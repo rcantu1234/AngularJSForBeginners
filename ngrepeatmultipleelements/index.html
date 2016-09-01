@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>NG-Repeat Across Mutiple Elements</title>
+  </head>
+  <body ng-controller='HomeController as controller'>
+
+    <input type="text" ng-model='controller.userName'>
+    <input type="password" ng-model='controller.password'>
+    <button ng-click='controller.change()'>Change</button>
+    <button ng-click='controller.submit()'>Submit</button>
+    <!-- You typed : {{controller.userName}} -->
+
+
+
+
+
+    <!-- <table border='1'>
+      <tr>
+        <th>
+          Label
+        </th>
+        <th>
+          Done
+        </th>
+      </tr>
+      <tr ng-repeat='note in controller.notes'>
+        <td>
+          {{note.label}}
+        </td>
+        <td>
+          {{note.done}}
+        </td>
+      </tr>
+
+    </table> -->
+
+
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="controllers.js" charset="utf-8"></script>
+  </body>
+</html>

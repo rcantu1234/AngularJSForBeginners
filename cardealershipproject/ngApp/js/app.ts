@@ -21,6 +21,16 @@ namespace MyApp {
       templateUrl: '/templates/details.html',
       controller: MyApp.Controllers.DetailsController,
       controllerAs: 'controller'
+    }).state('Show', {
+      url: '/show:id',
+      templateUrl: '/templates/show.html',
+      controller: MyApp.Controllers.ShowController,
+      controllerAs: 'controller'
+    }).state('Search', {
+      url: '/search:id',
+      templateUrl: '/templates/search.html',
+      controller: MyApp.Controllers.SearchController,
+      controllerAs: 'controller'
     });
 
     $urlRouterProvider.otherwise('/');
