@@ -58,3 +58,74 @@
 </body>
 
 </html>
+
+<!-- UPDATED VERSION OF INDEX.HTML FOR CARDEALERSHIP PROJECT -->
+<!-- <!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+  <title>cardealershipproject</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/site.css"/>
+
+</head>
+
+<body ng-controller='SearchController as cont' id='background'>
+
+  <nav class="navbar navbar-inverse navStyle">
+    <div class="container-fluid" ng-controller='MakesController as controller'>
+      <div class="navbar-header">
+        <a id="compLogo" class="navbar-brand" ui-sref="Home"><img height="50px;" ng-src="/img/adventureLogo.png" alt="" /></a>
+        <p id="compName">Adventure Cars</p>
+      </div>
+      <ul id="navTabs" class="nav navbar-nav">
+        <li><a ui-sref="About">About</a></li>
+        <a ui-sref="Search({id: '{{cont.ShortDescription}}'})"><input ng-model="cont.search" placeholder="search"
+               ng-model-options="{debounce:1000}"
+               ng-change="cont.fetch()" /></a>
+        <li uib-dropdown>
+        <a href="#" uib-dropdown-toggle class='makeStyle'> Make <span class="caret"></span></a>
+        <ul uib-dropdown-menu role="menu" >
+          <li role="menuitem" ng-repeat="make in controller.makes"><a ui-sref="Show({id: '{{make.id}}'})">{{make.name}}</a></li>
+        </ul>
+       </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br><br>
+
+  <ui-view></ui-view>
+
+  <script src="/scripts/angular/angular.min.js"></script>
+  <script src="/scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/scripts/angular-resource/angular-resource.min.js"></script>
+  <script src="/scripts/angular-animate/angular-animate.min.js"></script>
+  <script src="/scripts/angular-touch/angular-touch.min.js"></script>
+  <script src="/scripts/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/services.js"></script>
+  <script src="/js/controllers.js"></script>
+</body>
+
+</html> -->
+
+
+<!-- CSS FOR UPDATED VERSION OF NAV BAR -->
+<!-- #compLogo {
+  margin-top: -12px;
+}
+
+#compName {
+  margin-top: 12px;
+  float: right;
+  padding-right: 7px;
+}
+
+#navTabs {
+  border-left: 1px solid white;
+} -->

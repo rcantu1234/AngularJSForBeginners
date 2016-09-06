@@ -7,23 +7,6 @@ let makes = [
   {id:3, name:'Mini Cooper'}
 ];
 
-router.get('/makes/:id', function (req, res, next) {
-    let id = parseInt(req.params['id']);
-    let make = findMake(id);
-    if (make) {
-        res.json(make);
-    } else {
-        res.sendStatus(404);
-    }
-});
-
-function findMake(id:number) {
-  let matches = makes.filter((make) => {
-    return make.id == id;
-  });
-  return matches.length ? matches[0] : null;
-}
-
 var cars = [
         {
             id: 1,
@@ -92,9 +75,7 @@ router.get('/cars/search/:search', function(req, res, next) {
     let search = req.params['search'];
     let lowerCaseSearch = search.toLowerCase();
     let matches = cars.filter((car) => {
-      // if (car.ShortDescription.indexOf(lowerCaseSearch) == 0) {
         return car.ShortDescription.indexOf(search) == 0;
-      // }
     });
     res.json(matches);
 });

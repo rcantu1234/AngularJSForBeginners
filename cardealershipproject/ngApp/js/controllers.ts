@@ -66,6 +66,8 @@ namespace MyApp.Controllers {
                   .then((results) => {
                       this.cars = results.data;
                   });
+          } else {
+            this.cars = " ";
           }
       }
 
