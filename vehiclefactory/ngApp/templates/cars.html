@@ -1,0 +1,25 @@
+<h1>FACTORY CARS</h1>
+
+<!-- <div>
+
+</div> -->
+<div ng-controller='VehicleController as cont'>
+  <ul ng-repeat='vehicle in cont.vehicles'>
+    <li ng-repeat="car in controller.cars | filter : {CarMakeId : vehicle.CarMakeId}">{{vehicle.id}} {{vehicle.type}} | {{car.make}}</li>
+  </ul>
+</div>
+
+
+          <br><br>
+          <button ng-click='controller.filterCars(2)'>Click Me!</button>
+
+
+<!-- <ul>
+  <li ng-repeat="car in controller.cars | filter: {make: search}">{{car.make}}</li>
+</ul> -->
+
+<!-- <ul>
+  <li ng-repeat='car in controller.cars'><button class='btn btn-success' ng-click='controller.showModal(car.id)'>{{car.model}}</button></li>
+    <!-- {{controller.model}} -->
+<!-- </ul>
+<br> -->

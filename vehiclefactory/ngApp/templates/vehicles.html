@@ -1,0 +1,47 @@
+<div class="container divLeft">
+  <div class="row">
+     <div class="col-md-6">
+      <table border='1' cellspacing='3' cellpadding='3'>
+        <tr>
+          <th>Vehicle ID</th>
+          <th>Vehicle Type</th>
+        </tr>
+        <tr>
+            <td>{{controller.selectedVehicleId.id}}</td>
+            <td>{{controller.selectedVehicleId.type}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col-md-6" ng-controller='CarController as cont'>
+      <select ng-model='cont.selectedMakeId' ng-options='cars.make for cars in cont.cars'>
+
+      </select>
+
+      <!-- <div>
+        <ul ng-repeat='vehicle in controller.vehicles'>
+          <li ng-repeat="car in cont.cars | filter : {CarMakeId : vehicle.CarMakeId}">{{vehicle.id}} {{vehicle.type}} | {{car.make}}</li>
+        </ul>
+        <br><br><br>
+        <button ng-click="cont.filterCars(3)">Click Me!</button>
+      </div> -->
+
+    </div>
+
+
+
+
+
+<!-- <div class="container divLeft">
+  <div class="row">
+    <div class="col-md-6">
+      <li uib-dropdown>
+      <a href="#" uib-dropdown-toggle class='makeStyle'> Choose Vehicle Type <span class="caret"></span></a>
+        <ul uib-dropdown-menu role="menu" >
+          <li role="menuitem" ng-repeat="vehicle in controller.vehicles"><a ui-sref="Cars({id: '{{vehicle.id}}'})">{{vehicle.type}}</a>
+          </li>
+        </ul>
+      </li>
+    </div>
+  </div>
+</div> -->
