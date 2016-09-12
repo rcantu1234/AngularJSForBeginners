@@ -29,7 +29,7 @@ namespace MyApp.Controllers {
     public makes;
     public filterCars;
     public makeIdSelected;
-    // public makeSelect;
+    public checkboxFilter;
 
 
     makeSelect(makeObj){
@@ -37,6 +37,11 @@ namespace MyApp.Controllers {
       console.log('makeselect hit')
       let id = makeObj.id;
       console.log('id: ',id);
+      if (this.makes[0]['id'] === id) {
+        console.log('ID : ' + this.makes[0]['id']);
+      } else {
+        console.log('NOT FOUND!');
+      }
       this.filterCars = this.cars.filter((car) =>{ return car.CarMakeId == id;});
       console.log(this.filterCars);
     }
@@ -71,6 +76,16 @@ namespace MyApp.Controllers {
        this.cars.filter((car) => {
              return car.CarMakeId == car.id;
            });
+
+        //    this.checkboxFilter = function() {
+        //      if (this.makes[0]['id'] === 0) {
+        //        console.log('ID : ' + this.makes[0]['id']);
+        //      } else if (this.makes[0]['id'] === 1) {
+        //        console.log('ID : ' + this.makes[0]['id']);
+        //    } else if (this.makes[0]['id'] === 2) {
+        //      console.log('ID : ' + this.makes[0]['id']);
+        //   }
+        // }
      //}
     }
   }

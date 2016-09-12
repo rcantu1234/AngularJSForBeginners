@@ -1,7 +1,7 @@
 <div class="container divLeft" ng-controller='CarController as controller'>
   <div class="row">
      <div class="col-md-6">
-      <table border='1' cellspacing='3' cellpadding='3'>
+      <table border='1' cellspacing='3' cellpadding='3' class='table table-striped' >
         <tr>
           <th>Car ID</th>
           <th>Car Make</th>
@@ -23,40 +23,10 @@
 
       </select>
 
-      <!-- <ul>
-        <li ng-repeat="car in controller.cars">{{car.model}} {{}}</li>
-      </ul>
-
-      <br><br>
-      <button ng-click='controller.filterCars(controller.makeIdSelected.id)'>Click Me!</button> -->
-
+      <span ng-bind='controller.CarMakeId'></span>
     </div>
 
-
-
-
-
-
-          <!-- <ul>
-            <li ng-repeat="car in controller.cars"
-                  <ul>
-                    <li ng-repeat="car in controller.cars" ng-click='controller.filterCars(controller.id)'>{{car.model}}</li>
-                  </ul>>{{car.model}}</li>
-          </ul> -->
-
-
-
     <br>
-    <!-- <span ng-bind='controller.id'></span> -->
 
-
-    <!-- <div class="col-md-6">
-      <li uib-dropdown>
-      <a href="#" uib-dropdown-toggle class='makeStyle'> Choose Vehicle Type <span class="caret"></span></a>
-        <ul uib-dropdown-menu role="menu" >
-          <li role="menuitem" ng-repeat="car in controller.cars"><a ui-sref="Cars({id: '{{car.type}}'})">{{car.type}}</a></li>
-        </ul>
-      </li>
-    </div>  -->
   </div>
 </div>
